@@ -1,5 +1,5 @@
 {
-  "name": "@BorysShulyak/eslint-config-react",
+  "name": "@borisshulyak/eslint-config-react",
   "version": "1.0.0",
   "description": "ESLint configuration for React/Next apps.",
   "repository": {
