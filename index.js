@@ -1,13 +1,11 @@
-'use strict';
-
 module.exports = {
   root: true,
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    jest: true,
-    node: true,
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   settings: {
     react: {
@@ -17,16 +15,12 @@ module.exports = {
       version: 27
     }
   },
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    },
-    requireConfigFile: false,
-    babelOptions: {
-      presets: [require.resolve('babel-preset-react-app/prod')],
-    },
+  plugins: ['simple-import-sort', 'jest', 'testing-library'],
+  env: {
+    browser: true,
+    amd: true,
+    node: true,
+    "jest/globals": true
   },
   extends: [
     'airbnb',
@@ -34,7 +28,6 @@ module.exports = {
     'plugin:@next/next/recommended',
     'plugin:prettier/recommended'
   ],
-  plugins: ['simple-import-sort', 'jest', 'testing-library'],
   rules: {
     'prettier/prettier': [
       'error',
