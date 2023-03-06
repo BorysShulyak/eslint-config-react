@@ -4,8 +4,7 @@
   "description": "ESLint configuration for React/Next apps.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BorysShulyak/dev-tools",
-    "directory": "tools/eslint-config-react"
+    "url": "https://github.com/BorysShulyak/eslint-config-react"
   },
   "license": "MIT",
   "bugs": {
